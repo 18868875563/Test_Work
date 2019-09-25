@@ -1,10 +1,18 @@
-import com.sun.org.apache.xml.internal.serialize.LineSeparator;
-
-import java.util.*;
-
 public class Test_2 {
     public static void main(String[] args) {
-        List<Integer> list1 = new ArrayList();
+       int m = 128;
+       int n = 64;
+       for (int i = (m>n?m:n); i >= 1 ; i--) {
+            if (m % i ==0 && n % i ==0){
+                System.out.println(i);
+                break;
+            }
+        }
+        }
+}
+
+
+       /* List<Integer> list1 = new ArrayList();
         List<Integer> list2 = new ArrayList();
         List<Integer> list3 = new ArrayList();
         Test_2 t1 =new Test_2();
@@ -24,17 +32,5 @@ public class Test_2 {
             }
         }
         System.out.println(list);
-    }
-}
-
-
-/*    public static int PrineGCD(int m,int n){
-        int result =1;
-        Set<Integer> set1 = getFactor(m);
-        Set<Integer> set2 = getFactor(n);
-        // 取交集
-        set1.retainAll(set2);
-        // 取最大
-        return result;
     }*/
 
