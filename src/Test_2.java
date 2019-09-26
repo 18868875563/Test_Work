@@ -1,3 +1,6 @@
+/**
+ * 取出最大公约数
+ */
 public class Test_2 {
     public static void main(String[] args) {
        int m = 128;
